@@ -37,4 +37,35 @@ Array.prototype.twoSum = function() {
 
 
 
-console.log()
+// console.log()
+
+
+// INPUT
+// [[1,2],
+//  [3,4]]
+
+// OUTPUT
+// [[1,3],
+//  [2,4]]
+
+Array.prototype.transpose = function() {
+  // let outerArr = [...Array(this.length)];
+  // let finalArr = outerArr.map(el => [...Array(this.length)]);
+  // console.log(finalArr);
+
+  let output = [];
+
+  for (let i = 0; i < this.length; i++) {
+    let iterArr = [];
+    for (let j = 0; j < this.length; j++) {
+      iterArr.push(this[j][i]);
+    }
+    output.push(iterArr);
+  }
+
+  return output;
+};
+
+let arr3 = [[1, 2], [3, 4]];
+console.log(arr3.transpose());
+
