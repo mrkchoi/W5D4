@@ -53,4 +53,4 @@ let reduced = arr5.myReduce(function(acc,el) {
   return acc * el;
 });
 
-console.log(reduced);
+// console.log(reduced);

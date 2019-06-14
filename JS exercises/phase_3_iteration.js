@@ -34,4 +34,7 @@ String.prototype.substrings = function() {
   return substrings;
 };
 
-console.log('abcde'.substrings());
+// console.log('abcde'.substrings());
+
+
+
